@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Professional Code Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .code-textarea {
+      display: none;
+    }
+    .heading{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Online Editor</h1>
+    <h2>You can switch between the languages </h2>
+    <h3 >Note : Hit Enter if result didnt display</h3>
+  </div>
+  <div class="code-editor">
+    <div class="toolbar">
+      <button class="toolbar-button active" onclick="showTextArea('html')">HTML</button>
+      <button class="toolbar-button" onclick="showTextArea('css')">CSS</button>
+      <button class="toolbar-button" onclick="showTextArea('js')">JS</button>
+    </div>
+    <div class="container-page">
+    <div class="code-container">
+      <textarea id="htmlTextArea" class="code-textarea" placeholder="HTML code" style="display: block;"></textarea>
+      <textarea id="cssTextArea" class="code-textarea" placeholder="CSS code"></textarea>
+      <textarea id="jsTextArea" class="code-textarea" placeholder="JavaScript code"></textarea>
+    </div>
+    <div class="result">
+    <iframe id="result" class="result"></iframe>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
